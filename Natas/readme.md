@@ -64,7 +64,7 @@ fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
 
 # LEVEL 6
 
-Si cliquem a view source, podem veure un tros de codi php on viem un include includes/secret.inc, aquí dins hi ha una variable amb la contrasenya que hem de ficar a l'input per poder obtenir la contrasenya del Natas7.
+Si cliquem a view source, podem veure un tros de codi php. On veiem un include includes/secret.inc, aquí dins hi ha una variable amb la contrasenya que hem de ficar a l'input per poder obtenir la contrasenya del Natas7.
 Fallo: secret de forma gloabal
 
 http://natas6.natas.labs.overthewire.org/includes/secret.inc
